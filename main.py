@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import base64
+
+from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 @app.route('/dghsMathInfo')
@@ -30,7 +32,22 @@ def howToEnroll():
 
 @app.route('/promotion')
 def promotion():
-    return render_template('promotion.html')
+    #return render_template('promotion.html')
+    return redirect(url_for('constructing'))
+
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
+
+@app.route('/postRecollection')
+def postRecollection():
+    return render_template('postRecollection.html')
+
+@app.route('/sendPost', methods = ['POST'])
+def sendPost():
+    f = request.files['upload']
+    f.save(secure_filename(f.filename))
+    return 'absdf'
 
 if __name__ == '__main__':
     app.run('0.0.0.0', 80)

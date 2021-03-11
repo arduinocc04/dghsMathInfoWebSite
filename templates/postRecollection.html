@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>과거 활동 올리기</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+    <form action="/sendPost" method="POST" enctype="multipart/form-data">
+        <input multiple="multiple" type='file' id='upload' name='upload'>
+        <p></p>
+        <textarea name="texts" rows="10" cols="100" style="box-shadow: 1px 1px 1px #999;"></textarea>
+        <input type="submit" value="save">
+    </form>
+</body>
+</html>
