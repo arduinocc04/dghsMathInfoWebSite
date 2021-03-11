@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>수정반 가입방법</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <div class="container mx-auto lg:px-20 xl:px-40">
+        <div class="container mx-auto mt-20">
+            <div class="grid grid-cols-3">
+                <div class="col-span-2">
+                    <a href="dghsMathInfo">
+                        <p class="font-mono text-7xl font-black text-blue-500">수리정보</p>
+                        <p class="font-mono text-7xl font-light text-blue-500">영재반</p>
+                    </a>
+                </div>
+                <div id="navigator" class="">
+                    <p class="font-mono text-xl font-light text-gray-400 text-right hover:text-gray-600"><a href="/dghsMathInfo"">홈</a></p>
+                    <p class="font-mono text-xl font-light text-gray-400 text-right hover:text-gray-600"><a href="/team"">부원</a></p>
+                    <!--<p class="font-mono text-xl font-light text-gray-400 text-right hover:text-gray-600"><a href="/history"">역사</a></p>-->
+                    <p class="font-mono text-xl font-light text-gray-400 text-right hover:text-gray-600"><a href="/recollection"">과거 활동</a></p>
+                    <p class="font-mono text-xl font-light text-gray-400 text-right hover:text-gray-600"><a href="/howToEnroll">수정반 가입</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-20">
+            <img src="{{url_for('static', filename='poster-donggun.png')}}">
+            <p class="font-mono text-lg font-light text-gray-400 text-center">^ 20822 이동건 제작</p>
+        </div>
+
+        <div class="container mx-auto mt-20">
+            <img src="{{url_for('static', filename='poster-road.png')}}">
+            <p class="font-mono text-lg font-light text-gray-400 text-center">^ 20804 길서연 제작</p>
+        </div>
+    </div>
+</body>
+</html>
