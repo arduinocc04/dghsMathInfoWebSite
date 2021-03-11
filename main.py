@@ -10,5 +10,13 @@ def home():
 def team():
     return render_template('team.html')
 
+@app.route('/recollection')
+def recollection():
+    return render_template('recollection.html')
+
+@app.route('/history')
+def history():
+    return render_template('history.html')
+
 if __name__ == '__main__':
     app.run('0.0.0.0', 8080)
